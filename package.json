@@ -1,0 +1,24 @@
+{
+  "name": "jobs-ecs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "light-jobs": "ts-node-dev -r tsconfig-paths/register ./src/main/light-jobs.ts",
+    "heavy-jobs": "ts-node-dev -r tsconfig-paths/register ./src/main/heavy-jobs.ts",
+    "scheduler": "ts-node-dev -r tsconfig-paths/register ./src/main/scheduler.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ecs": "3.594.0"
+  }
+}
